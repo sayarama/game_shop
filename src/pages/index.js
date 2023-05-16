@@ -20,7 +20,7 @@ export default function Home() {
       </nav>
 
       <section>
-        
+        <img src="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/diluc.png"/>
       </section>
     </div>
     </>
