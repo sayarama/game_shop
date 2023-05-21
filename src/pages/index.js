@@ -1,5 +1,5 @@
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { AiFillWallet, AiFillHeart } from "react-icons/ai";
+import { AiFillWallet, AiFillHeart, AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
 import { BsCartFill } from "react-icons/bs";
 import Card from "./Card/Card";
 
@@ -7,7 +7,7 @@ export default function Home() {
   const images = `<img src="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/akai.png"/>`
   return (
     <>
-      <div className="w-screen bg-slate-100 ">
+      <div className="w-screen bg-slate-100  ">
         <nav className=" w-full p-5 shadow-xl bg-slate-100">
           <div className="text-black m-auto w-3/4 items-center flex justify-between">
             <div>Anu Gaming Store</div>
@@ -38,7 +38,7 @@ export default function Home() {
               <button className="bg-blue-700 text-white font-bold px-7 py-3 rounded-lg shadow-2xl shadow-blue-700/50">
                 Daftar
               </button>
-              <button className="px-5 py-3 border-blue-700 text-blue-700 font-bold border-4 rounded-lg ">
+              <button className="p-3 border-blue-700 text-blue-700 flex items-center gap-3 font-bold border-4 rounded-lg ">
                 Lihat Produk <IoIosArrowDroprightCircle />
               </button>
             </section>
@@ -78,9 +78,9 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="w-full h-screen bg-red-500 p-5">
-          <h1 className="text-center text-4xl font-bold">Lihat Produk Kami</h1>
-          <div className="flex gap-4 items-center justify-center mt-7">
+        <div className="w-full h-screen bg-indigo-100/75  p-10">
+          <h1 className="text-center text-black text-4xl font-bold">Lihat Produk Kami</h1>
+          <div className="flex gap-4 items-center justify-center mt-10">
             <p className="bg-gray-500 p-2 rounded-xl">Mobile Games</p>
             <p className="bg-gray-500 p-2 rounded-xl">PC Games</p>
             <p className="bg-gray-500 p-2 rounded-xl">PlayStation</p>
@@ -88,9 +88,24 @@ export default function Home() {
             <p className="bg-gray-500 p-2 rounded-xl">Popular</p>
             <p className="bg-gray-500 p-2 rounded-xl">Promo</p>
           </div>
-          <div>
+          <div className=" w-fit m-auto">
+          <div className="flex justify-center items-center gap-10 mt-10  ">
             <Card  images="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/akai.png" title={'Mobile Legends'}/>
+            <Card  images="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/pubg.png" title={'PUBG'}/>
+            <Card  images="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/omen.webp" title={'Valorant'}/>
+            <Card  images="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/shogun.webp" title={'Genshin Impact'}/>
             
+          </div>
+          <div className="flex justify-end text-black gap-7 mt-10">
+            <div className="flex shadow-xl  items-center bg-white p-2 rounded-lg">
+              <input className="w-full outline-none" type="text"/>
+              <AiOutlineSearch/>
+            </div>
+            <div className="flex shadow-xl items-center gap-4 p-3 bg-white rounded-lg">
+              <p>Next</p>
+              <AiOutlineArrowRight/>
+            </div>
+          </div>
           </div>
         </div>
       </div>
