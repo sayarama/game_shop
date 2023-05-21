@@ -1,6 +1,7 @@
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { AiFillWallet, AiFillHeart } from "react-icons/ai";
 import { BsCartFill } from "react-icons/bs";
+import Card from "./Card/Card";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
               AnuGameStore - Pit Stop To Upgrade Your Game Accounts
             </p>
             <section className="flex gap-8">
-              <button className="bg-blue-700 text-white font-bold px-7 py-3 rounded-lg">
+              <button className="bg-blue-700 text-white font-bold px-7 py-3 rounded-lg shadow-2xl shadow-blue-700/50">
                 Daftar
               </button>
               <button className="px-5 py-3 border-blue-700 text-blue-700 font-bold border-4 rounded-lg ">
@@ -49,23 +50,46 @@ export default function Home() {
           </div>
         </section>
         <div className="w-full h-80 p-5">
-          <section className="bg-blue-700 rounded-xl w-full h-full flex items-center justify-around">
+          <section className="bg-blue-700 rounded-xl w-full h-full flex items-center justify-around shadow-xl">
             <div>
-              <AiFillWallet className="text-7xl"/>
-              <h3 className="text-5xl font-bold">Multi Payment</h3>
-              <p className="w-72 tracking-wide">Kita Menerima segala jenis pembayaran digital yang memudahkan kamu dalam pembelian</p>
+              <AiFillWallet className="text-7xl" />
+              <h3 className="text-5xl font-bold mt-2">Multi Payment</h3>
+              <p className="w-72 tracking-wide mt-2">
+                Kita Menerima segala jenis pembayaran digital yang memudahkan
+                kamu dalam pembelian
+              </p>
             </div>
             <div>
-              <BsCartFill className="text-7xl"/>
-              <h3 className="text-5xl font-bold">Easy Checkout</h3>
-              <p className="w-72 tracking-wide">Sistem Check out yang mudah karena langsung terhubung dengan WhatsApp</p>
+              <BsCartFill className="text-7xl" />
+              <h3 className="text-5xl font-bold mt-2">Easy Checkout</h3>
+              <p className="w-72 tracking-wide mt-2">
+                Sistem Check out yang mudah karena langsung terhubung dengan
+                WhatsApp
+              </p>
             </div>
             <div>
-              <AiFillHeart className="text-7xl"/>
-              <h3 className="text-5xl font-bold">Cheap Price</h3>
-              <p className="w-72 tracking-wide">Kami menawarkan harga yang lebih murah namun juga lebih aman</p>
+              <AiFillHeart className="text-7xl" />
+              <h3 className="text-5xl font-bold mt-2">Cheap Price</h3>
+              <p className="w-72 tracking-wide mt-2">
+                Kami menawarkan harga yang lebih murah namun juga lebih aman
+              </p>
             </div>
           </section>
+        </div>
+
+        <div className="w-full h-screen bg-red-500 p-5">
+          <h1 className="text-center text-4xl font-bold">Lihat Produk Kami</h1>
+          <div className="flex gap-4 items-center justify-center mt-7">
+            <p className="bg-gray-500 p-2 rounded-xl">Mobile Games</p>
+            <p className="bg-gray-500 p-2 rounded-xl">PC Games</p>
+            <p className="bg-gray-500 p-2 rounded-xl">PlayStation</p>
+            <p className="bg-gray-500 p-2 rounded-xl">Nintendo</p>
+            <p className="bg-gray-500 p-2 rounded-xl">Popular</p>
+            <p className="bg-gray-500 p-2 rounded-xl">Promo</p>
+          </div>
+          <div>
+            <Card/>
+          </div>
         </div>
       </div>
     </>
