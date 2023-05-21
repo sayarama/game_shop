@@ -4,6 +4,7 @@ import { BsCartFill } from "react-icons/bs";
 import Card from "./Card/Card";
 
 export default function Home() {
+  const images = `<img src="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/akai.png"/>`
   return (
     <>
       <div className="w-screen bg-slate-100 ">
@@ -88,7 +89,8 @@ export default function Home() {
             <p className="bg-gray-500 p-2 rounded-xl">Promo</p>
           </div>
           <div>
-            <Card/>
+            <Card  images="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/akai.png" title={'Mobile Legends'}/>
+            
           </div>
         </div>
       </div>
