@@ -2,6 +2,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { AiFillWallet, AiFillHeart, AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
 import { BsCartFill } from "react-icons/bs";
 import Card from "./Card/Card";
+import Slider from "./Slider/Slider";
 
 export default function Home() {
   const images = `<img src="https://raw.githubusercontent.com/ulrmdhn/game_shop/master/src/img/akai.png"/>`
@@ -13,11 +14,11 @@ export default function Home() {
             <div>Anu Gaming Store</div>
             <div>
               <ul className="flex gap-5 items-center">
-                <li>Home</li>
-                <li>Cara Pesan</li>
-                <li>Product</li>
-                <li>Testimoni</li>
-                <li>Contact</li>
+                <li className="hover:bg-slate-400 p-2">Home</li>
+                <li className="hover:bg-slate-400 p-2">Cara Pesan</li>
+                <li className="hover:bg-slate-400 p-2">Product</li>
+                <li className="hover:bg-slate-400 p-2">Testimoni</li>
+                <li className="hover:bg-slate-400 p-2">Contact</li>
                 <button className="bg-blue-700 px-6 text-white font-bold py-2 rounded-lg">
                   Login
                 </button>
@@ -78,15 +79,15 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="w-full h-screen bg-indigo-100/75  p-10">
+        <div className="w-full bg-indigo-100/75  p-10">
           <h1 className="text-center text-black text-4xl font-bold">Lihat Produk Kami</h1>
           <div className="flex gap-4 items-center justify-center mt-10">
-            <p className="bg-gray-500 p-2 rounded-xl">Mobile Games</p>
-            <p className="bg-gray-500 p-2 rounded-xl">PC Games</p>
-            <p className="bg-gray-500 p-2 rounded-xl">PlayStation</p>
-            <p className="bg-gray-500 p-2 rounded-xl">Nintendo</p>
-            <p className="bg-gray-500 p-2 rounded-xl">Popular</p>
-            <p className="bg-gray-500 p-2 rounded-xl">Promo</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">Mobile Games</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">PC Games</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">PlayStation</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">Nintendo</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">Popular</p>
+            <p className="bg-gray-500 p-2 rounded-xl hover:bg-gray-600">Promo</p>
           </div>
           <div className=" w-fit m-auto">
           <div className="flex justify-center items-center gap-10 mt-10  ">
@@ -106,6 +107,13 @@ export default function Home() {
               <AiOutlineArrowRight/>
             </div>
           </div>
+          </div>
+        </div>
+
+        <div className="w-full p-6 text-center ">
+          <h1 className="text-black font-bold text-5xl mb-11">Testimonial</h1>
+          <div>
+          <Slider/>
           </div>
         </div>
       </div>
